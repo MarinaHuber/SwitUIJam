@@ -1,4 +1,4 @@
 # SwitUIJam
 MapKit + SwiftUI
 
-![alt text](http://url/to/img.png)
+![drag animate swiftui](https://github.com/MarinaHuber/SwitUIJam/blob/main/swiftUIDrag.gif)
