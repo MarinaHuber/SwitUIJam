@@ -7,16 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C30ED342735C412000A9D2A /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C30ED332735C412000A9D2A /* locations.json */; };
+		9C30ED362735C436000A9D2A /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30ED352735C436000A9D2A /* CodableBundleExtension.swift */; };
+		9C30ED392735C45F000A9D2A /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30ED382735C45F000A9D2A /* LocationModel.swift */; };
+		9C30ED3B2735C505000A9D2A /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30ED3A2735C505000A9D2A /* MotionAnimationView.swift */; };
+		9C30ED3D2735CECE000A9D2A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30ED3C2735CECE000A9D2A /* MenuView.swift */; };
+		9C30ED3F2735CFAA000A9D2A /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30ED3E2735CFAA000A9D2A /* CircleButton.swift */; };
 		9C98E35B2735BC270028686C /* SwiftUIJamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C98E35A2735BC270028686C /* SwiftUIJamApp.swift */; };
-		9C98E35D2735BC270028686C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C98E35C2735BC270028686C /* ContentView.swift */; };
+		9C98E35D2735BC270028686C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C98E35C2735BC270028686C /* MainView.swift */; };
 		9C98E35F2735BC280028686C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C98E35E2735BC280028686C /* Assets.xcassets */; };
 		9C98E3622735BC280028686C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C98E3612735BC280028686C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C30ED332735C412000A9D2A /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		9C30ED352735C436000A9D2A /* CodableBundleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		9C30ED382735C45F000A9D2A /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		9C30ED3A2735C505000A9D2A /* MotionAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		9C30ED3C2735CECE000A9D2A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		9C30ED3E2735CFAA000A9D2A /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		9C98E3572735BC270028686C /* SwiftUIJam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIJam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C98E35A2735BC270028686C /* SwiftUIJamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIJamApp.swift; sourceTree = "<group>"; };
-		9C98E35C2735BC270028686C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9C98E35C2735BC270028686C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9C98E35E2735BC280028686C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C98E3612735BC280028686C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +44,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C30ED302735C3DA000A9D2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C30ED3A2735C505000A9D2A /* MotionAnimationView.swift */,
+				9C30ED3C2735CECE000A9D2A /* MenuView.swift */,
+				9C30ED3E2735CFAA000A9D2A /* CircleButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C30ED312735C3E4000A9D2A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C30ED352735C436000A9D2A /* CodableBundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9C30ED322735C3EF000A9D2A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9C30ED332735C412000A9D2A /* locations.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9C30ED372735C44D000A9D2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C30ED382735C45F000A9D2A /* LocationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9C98E34E2735BC270028686C = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +97,12 @@
 		9C98E3592735BC270028686C /* SwiftUIJam */ = {
 			isa = PBXGroup;
 			children = (
+				9C30ED372735C44D000A9D2A /* Model */,
+				9C30ED322735C3EF000A9D2A /* Data */,
+				9C30ED312735C3E4000A9D2A /* Extensions */,
+				9C30ED302735C3DA000A9D2A /* View */,
 				9C98E35A2735BC270028686C /* SwiftUIJamApp.swift */,
-				9C98E35C2735BC270028686C /* ContentView.swift */,
+				9C98E35C2735BC270028686C /* MainView.swift */,
 				9C98E35E2735BC280028686C /* Assets.xcassets */,
 				9C98E3602735BC280028686C /* Preview Content */,
 			);
@@ -126,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C98E3622735BC280028686C /* Preview Assets.xcassets in Resources */,
+				9C30ED342735C412000A9D2A /* locations.json in Resources */,
 				9C98E35F2735BC280028686C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C98E35D2735BC270028686C /* ContentView.swift in Sources */,
+				9C30ED392735C45F000A9D2A /* LocationModel.swift in Sources */,
+				9C30ED3F2735CFAA000A9D2A /* CircleButton.swift in Sources */,
+				9C30ED3D2735CECE000A9D2A /* MenuView.swift in Sources */,
+				9C98E35D2735BC270028686C /* MainView.swift in Sources */,
 				9C98E35B2735BC270028686C /* SwiftUIJamApp.swift in Sources */,
+				9C30ED362735C436000A9D2A /* CodableBundleExtension.swift in Sources */,
+				9C30ED3B2735C505000A9D2A /* MotionAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +333,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,7 +343,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +363,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +373,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
