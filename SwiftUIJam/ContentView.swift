@@ -18,7 +18,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-                .previewDevice("iPhone 13")
+                .previewDevice("iPhone 12")
         }
     }
 }
