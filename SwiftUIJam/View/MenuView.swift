@@ -14,31 +14,29 @@ struct MenuView: View {
         VStack {
             Spacer()
             VStack(spacing: 16) {
-                Text("Jake")
+                Text("Menu")
                     .font(.caption)
                 
                 MenuRow(showExample: $showExample, title: "Settings", icon: "")
                 MenuRow(showExample: $showExample, title: "Account", icon: "")
-                MenuRow(showExample: $showExample, title: "Sessions", icon: "")
+                MenuRow(showExample: $showExample, title: "Map", icon: "map")
                 MenuRow(showExample: $showExample, title: "Sign out", icon: "person.crop.circle")
 
             }
             .frame(maxWidth: .infinity)
             .frame(height: 300)
             .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)), Color(#colorLiteral(red: 0.8705882353, green: 0.8941176471, blue: 0.9450980392, alpha: 1))]), startPoint: .top, endPoint: .bottom))
-            .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+            .clipShape(RoundedRectangle(cornerRadius: 35, style: .circular))
             .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
             .padding(.horizontal, 35)
             .overlay(
-            Image("Avatar")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
+            Circle()
+                .foregroundColor(.blue)
                 .frame(width: 60, height: 60)
-                .clipShape(Circle())
                 .offset(y: -155)
             )
         }
-        .padding(.bottom, 30)
+       // .padding(.bottom, 30)
     }
 }
 

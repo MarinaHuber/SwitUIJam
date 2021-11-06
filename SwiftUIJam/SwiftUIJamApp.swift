@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUIJamApp: App {
     var body: some Scene {
         WindowGroup {
-            MotionAnimationView(showMenu: .constant(false))
+            MainView(showMenu: false)
         }
     }
 }

@@ -11,7 +11,6 @@ import SwiftUI
 struct MotionAnimationView: View {
     //MARK: - Properties
 
-    @Binding var showMenu: Bool
     
     @State private var randomCircle = Int.random(in: 12...16)
     @State private var isAnimating: Bool = false
@@ -47,7 +46,6 @@ struct MotionAnimationView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                CircleButton(showMenu: $showMenu)
                 ForEach(0...randomCircle, id: \.self) { item in
                     Circle()
                         .foregroundColor(.blue)
@@ -80,7 +78,7 @@ struct MotionAnimationView: View {
 @available(iOS 15.0, *)
 struct MotionAnimationView_Previews: PreviewProvider {
     static var previews: some View {
-        MotionAnimationView(showMenu: .constant(false))
+        MotionAnimationView()
             .previewDevice("iPhone 13")
     }
 }
