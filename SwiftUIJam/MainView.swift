@@ -19,14 +19,13 @@ struct MainView: View {
 
             MotionAnimationView()
             CircleButton(showMenu: $showMenu)
-                .offset(y: showMenu ? -190 : 0)
-                .rotation3DEffect(Angle(degrees: showMenu ? Double(viewState.height / 10) - 10 : 0), axis: (x: 15, y: 0, z: 0))
-                .scaleEffect(showMenu ? 0.9 : 1)
+                .offset(y: showMenu ? -10 : 0)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
                 .edgesIgnoringSafeArea(.all)
 
             
             MenuView()
+                .overlay(CircleButton(showMenu: $showMenu).offset(x: self.viewState.width, y: self.viewState.height + 200), alignment: .center)
                 .background(Color.black.opacity(0.002))
                 .offset(y: showMenu ? 0 : screen.height) // start position
                 .offset(y: viewState.height - 200) // position of menu
@@ -46,6 +45,7 @@ struct MainView: View {
                         self.viewState = .zero
                     }
                 )
+//            StartStopAnimateView()
         }
        
     }

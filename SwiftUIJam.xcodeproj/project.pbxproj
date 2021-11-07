@@ -17,6 +17,7 @@
 		9C98E35D2735BC270028686C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C98E35C2735BC270028686C /* MainView.swift */; };
 		9C98E35F2735BC280028686C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C98E35E2735BC280028686C /* Assets.xcassets */; };
 		9C98E3622735BC280028686C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C98E3612735BC280028686C /* Preview Assets.xcassets */; };
+		9CFE887827382C460099EC8F /* AnimateShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFE887727382C460099EC8F /* AnimateShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9C98E35C2735BC270028686C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9C98E35E2735BC280028686C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C98E3612735BC280028686C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CFE887727382C460099EC8F /* AnimateShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimateShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				9C30ED3A2735C505000A9D2A /* MotionAnimationView.swift */,
+				9CFE887727382C460099EC8F /* AnimateShape.swift */,
 				9C30ED3C2735CECE000A9D2A /* MenuView.swift */,
 				9C30ED3E2735CFAA000A9D2A /* CircleButton.swift */,
 			);
@@ -193,6 +196,7 @@
 				9C30ED3D2735CECE000A9D2A /* MenuView.swift in Sources */,
 				9C98E35D2735BC270028686C /* MainView.swift in Sources */,
 				9C98E35B2735BC270028686C /* SwiftUIJamApp.swift in Sources */,
+				9CFE887827382C460099EC8F /* AnimateShape.swift in Sources */,
 				9C30ED362735C436000A9D2A /* CodableBundleExtension.swift in Sources */,
 				9C30ED3B2735C505000A9D2A /* MotionAnimationView.swift in Sources */,
 			);
